@@ -1,0 +1,34 @@
+.NET
+
+Dependencias:
+ - microsoft.entityframeworkcore 8.0.5
+ - microsoft.entityframeworkcore.design 8.0.5
+ - microsoft.entityframeworkcore.sqlserver 8.0.5
+ - microsoft.entityframeworkcore.tools 8.0.5
+ - automapper 13.0.1
+
+
+
+ AppSettings.Development :
+
+{
+ "ConnectionStrings": {
+  "ConnectionDatabase": "Server=localhost;Database=progra3_practica;Integrated Security=true;TrustServerCertificate=True;"
+},
+
+
+Consola de Adm Nuggets
+Scaffold-DbContext "Server=localhost;Database=progra3_practica;Integrated Security=true;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+
+
+------CODEFIRST--------------------
+
+Migracion: 
+(Debo estar dentro de la carpeta del proyecto, NO de la solucion)
+
+dotnet tool install --global dotnet-ef (solo una vez en la vida en cada pc, para que reconozca el entityframework)
+dotnet ef migrations add PrimerMigracion (puede haber error en el codigo fuente)
+dotnet ef migrations add Comentarios (puede haber error en el codigo fuente) -- agrego cambios a la base de datos
+dotnet ef database update (puede haber error en la cadena de conexion)
+dotnet ef migrations remove --force (elimina las migraciones)

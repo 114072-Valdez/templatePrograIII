@@ -1,0 +1,120 @@
+[
+  {
+    "ContainingType": "template.Controllers.ParcialController",
+    "Method": "GetAlbaniles",
+    "RelativePath": "getAlbaniles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idObra",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "template.Response.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[template.DTOs.AlbanileDTO, template, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "template.Controllers.ParcialController",
+    "Method": "GetAllAlbaniles",
+    "RelativePath": "getAllAlbaniles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "template.Response.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[template.DTOs.AlbanileDTO, template, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "template.Controllers.ParcialController",
+    "Method": "GetObras",
+    "RelativePath": "getObras",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "template.Response.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[template.DTOs.ObraDTO, template, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "template.Controllers.ParcialController",
+    "Method": "PostAlbaniles",
+    "RelativePath": "postAlbanile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "albanileCreate",
+        "Type": "template.DTOs.AlbanileCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "template.Response.ApiResponse\u00601[[template.DTOs.AlbanileDTO, template, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "template.Controllers.ParcialController",
+    "Method": "PostAlbanilesXObra",
+    "RelativePath": "postAlbanileXObra",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "albanilXObraCreate",
+        "Type": "template.DTOs.albanilXObraCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "template.Response.ApiResponse\u00601[[template.Services.AlbanilesXObraDTO, template, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
