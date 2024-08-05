@@ -58,6 +58,25 @@ namespace template.Services.Impl
             return response;
         }
 
+
+        public async Task<ApiResponse<AlbanileDTO>> GetAlbanil(string id)
+        {
+            var response = new ApiResponse<AlbanileDTO>();
+
+            try
+            {
+                var repoResponse = await _repository.GetAlbanile(id);
+                var albanilesDTO = _mapper.Map<AlbanileDTO>(repoResponse);
+                response.Data = albanilesDTO;
+            }
+            catch (Exception ex)
+            {
+                response.setError(ex.ToString(), HttpStatusCode.BadRequest);
+            }
+
+            return response;
+        }
+
         public async Task<ApiResponse<List<ObraDTO>>> GetObras()
         {
             var response = new ApiResponse<List<ObraDTO>>();
@@ -91,6 +110,26 @@ namespace template.Services.Impl
             {
                 var albanile = _mapper.Map<Albanile>(albanileCreate);
                 var repoResponse = await _repository.PostAlbanile(albanile);
+                var albanilesDTO = _mapper.Map<AlbanileDTO>(repoResponse);
+                response.Data = albanilesDTO;
+            }
+            catch (Exception ex)
+            {
+                response.setError(ex.ToString(), HttpStatusCode.BadRequest);
+            }
+
+            return response;
+        }
+
+
+        public async Task<ApiResponse<AlbanileDTO>> PutAlbanile(string id, AlbanileCreateDTO albanileCreate)
+        {
+            var response = new ApiResponse<AlbanileDTO>();
+
+            try
+            {
+                var albanile = _mapper.Map<Albanile>(albanileCreate);
+                var repoResponse = await _repository.PutAlbanile(id, albanile);
                 var albanilesDTO = _mapper.Map<AlbanileDTO>(repoResponse);
                 response.Data = albanilesDTO;
             }

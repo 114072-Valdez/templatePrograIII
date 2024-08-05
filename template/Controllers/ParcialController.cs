@@ -22,6 +22,12 @@ namespace template.Controllers
             return _operacionesService.GetAllAlbaniles();
         }
 
+        [HttpGet("/getAlbanil/{id}")]
+        public Task<ApiResponse<AlbanileDTO>> GetAlbanil(string id)
+        {
+            return _operacionesService.GetAlbanil(id);
+        }
+
         [HttpGet("/getObras")]
         public Task<ApiResponse<List<ObraDTO>>> GetObras()
         {
@@ -38,6 +44,12 @@ namespace template.Controllers
         public Task<ApiResponse<AlbanileDTO>> PostAlbaniles([FromBody] AlbanileCreateDTO albanileCreate)
         {
             return _operacionesService.PostAlbanile(albanileCreate);
+        }
+
+        [HttpPut("/putAlbanile/{id}")]
+        public Task<ApiResponse<AlbanileDTO>> PutAlbaniles(string id, [FromBody] AlbanileCreateDTO albanileCreate)
+        {
+            return _operacionesService.PutAlbanile(id, albanileCreate);
         }
 
         [HttpPost("/postAlbanileXObra")]

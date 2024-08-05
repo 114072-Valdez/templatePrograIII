@@ -11,7 +11,9 @@ namespace template.Services
         Task<ApiResponse<List<ObraDTO>>> GetObras();
         Task<ApiResponse<List<AlbanileDTO>>> GetAlbaniles(string idObra);
         Task<ApiResponse<AlbanileDTO>> PostAlbanile(AlbanileCreateDTO albanileCreate);
+        Task<ApiResponse<AlbanileDTO>> PutAlbanile( string id, AlbanileCreateDTO albanileCreate);
         Task<ApiResponse<AlbanilesXObraDTO>> PostAlbanileXObra(albanilXObraCreateDTO albanilXObraCreate);
+        Task<ApiResponse<AlbanileDTO>> GetAlbanil(string id);
     }
 
  

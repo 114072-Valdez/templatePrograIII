@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ger4r\\Mi unidad\\Documentos Programación\\TUP\\3er Semestre\\Prog III\\template\\template\\template.csproj": {}
+    "C:\\Users\\ger4r\\OneDrive\\Escritorio\\template\\template\\template.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ger4r\\Mi unidad\\Documentos Programación\\TUP\\3er Semestre\\Prog III\\template\\template\\template.csproj": {
+    "C:\\Users\\ger4r\\OneDrive\\Escritorio\\template\\template\\template.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ger4r\\Mi unidad\\Documentos Programación\\TUP\\3er Semestre\\Prog III\\template\\template\\template.csproj",
+        "projectUniqueName": "C:\\Users\\ger4r\\OneDrive\\Escritorio\\template\\template\\template.csproj",
         "projectName": "template",
-        "projectPath": "C:\\Users\\ger4r\\Mi unidad\\Documentos Programación\\TUP\\3er Semestre\\Prog III\\template\\template\\template.csproj",
+        "projectPath": "C:\\Users\\ger4r\\OneDrive\\Escritorio\\template\\template\\template.csproj",
         "packagesPath": "C:\\Users\\ger4r\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ger4r\\Mi unidad\\Documentos Programación\\TUP\\3er Semestre\\Prog III\\template\\template\\obj\\",
+        "outputPath": "C:\\Users\\ger4r\\OneDrive\\Escritorio\\template\\template\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ger4r\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -93,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mDGbuUgskD9aY8UY5aR5m3pyGoyVTUMlwlOCSEDKOil3sjGZcjLehTN55hqxbMQSoP4+GSHz4gN0FhvZ2A9ZBA==",
+  "dgSpecHash": "TswOdsorv3E=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ger4r\\Mi unidad\\Documentos Programación\\TUP\\3er Semestre\\Prog III\\template\\template\\template.csproj",
+  "projectFilePath": "C:\\Users\\ger4r\\OneDrive\\Escritorio\\template\\template\\template.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ger4r\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\ger4r\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
